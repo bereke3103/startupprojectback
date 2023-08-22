@@ -31,9 +31,9 @@ namespace StrProject.Controllers
             UserModel newEntity = new UserModel()
             {
                 Nickname = model.Nickname,
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                WorkPlace = model.WorkPlace,
+                Firstname = model.Firstname,
+                Lastname = model.Lastname,
+                Workplace = model.Workplace,
                 Stack = model.Stack,
             };
 
@@ -54,14 +54,28 @@ namespace StrProject.Controllers
             else
             {
                 foundUser.Nickname = model.Nickname;
-                foundUser.FirstName = model.FirstName;
-                foundUser.LastName = model.LastName;
-                foundUser.WorkPlace = model.WorkPlace;
+                foundUser.Firstname = model.Firstname;
+                foundUser.Lastname = model.Lastname;
+                foundUser.Workplace = model.Workplace;
                 foundUser.Stack = model.Stack;
 
                 _unitOfWork.User.Update(foundUser);
                 await _unitOfWork.SaveAsync();
                 return Ok(foundUser);
+            }
+        }
+
+        [HttpGet("getuserById")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            var user = _unitOfWork.User.Get(user => user.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Ok(user);
             }
         }
     }

@@ -12,11 +12,11 @@ namespace Models.ViewModel
         [Required]
         public string Nickname { get; set; }
         [Required]
-        public string FirstName { get; set; }
+        public string Firstname { get; set; }
         [Required]
-        public string LastName { get; set; }
+        public string Lastname { get; set; }
         [Required]
-        public string WorkPlace { get; set; }
+        public string Workplace { get; set; }
         [Required]
         public string Stack { get; set; }
 

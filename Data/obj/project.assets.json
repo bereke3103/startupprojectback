@@ -5595,25 +5595,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\berek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\strproject\\backstart\\StrProject\\Data\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\berek\\OneDrive\\Рабочий стол\\startupprojectfrontandback\\back\\startupprojectback\\Data\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\User\\Desktop\\strproject\\backstart\\StrProject\\Data\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\strproject\\backstart\\StrProject\\Data\\obj\\",
+      "projectPath": "C:\\Users\\berek\\OneDrive\\Рабочий стол\\startupprojectfrontandback\\back\\startupprojectback\\Data\\DataAccess.csproj",
+      "packagesPath": "C:\\Users\\berek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\berek\\OneDrive\\Рабочий стол\\startupprojectfrontandback\\back\\startupprojectback\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\berek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5628,8 +5626,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\strproject\\backstart\\StrProject\\Models\\Models.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\strproject\\backstart\\StrProject\\Models\\Models.csproj"
+            "C:\\Users\\berek\\OneDrive\\Рабочий стол\\startupprojectfrontandback\\back\\startupprojectback\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\berek\\OneDrive\\Рабочий стол\\startupprojectfrontandback\\back\\startupprojectback\\Models\\Models.csproj"
             }
           }
         }
@@ -5685,7 +5683,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

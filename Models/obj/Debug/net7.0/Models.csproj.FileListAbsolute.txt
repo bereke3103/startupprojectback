@@ -10,3 +10,15 @@ C:\Users\User\Desktop\strproject\backstart\StrProject\Models\obj\Debug\net7.0\Mo
 C:\Users\User\Desktop\strproject\backstart\StrProject\Models\obj\Debug\net7.0\refint\Models.dll
 C:\Users\User\Desktop\strproject\backstart\StrProject\Models\obj\Debug\net7.0\Models.pdb
 C:\Users\User\Desktop\strproject\backstart\StrProject\Models\obj\Debug\net7.0\ref\Models.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\bin\Debug\net7.0\Models.deps.json
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\bin\Debug\net7.0\Models.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\bin\Debug\net7.0\Models.pdb
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.csproj.AssemblyReference.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.AssemblyInfoInputs.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.AssemblyInfo.cs
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\refint\Models.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\Models.pdb
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\back\startupprojectback\Models\obj\Debug\net7.0\ref\Models.dll
