@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrProject", "StrProject\StrProject.csproj", "{BDC24190-CD2E-47B7-A003-0289882C0479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "Data\DataAccess.csproj", "{AA363BD0-8364-434C-B1BC-B6C860EEA4D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{3A557C66-B831-4EC8-9B5C-EFF9E30F781F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDC24190-CD2E-47B7-A003-0289882C0479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC24190-CD2E-47B7-A003-0289882C0479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC24190-CD2E-47B7-A003-0289882C0479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC24190-CD2E-47B7-A003-0289882C0479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA363BD0-8364-434C-B1BC-B6C860EEA4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA363BD0-8364-434C-B1BC-B6C860EEA4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA363BD0-8364-434C-B1BC-B6C860EEA4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA363BD0-8364-434C-B1BC-B6C860EEA4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A557C66-B831-4EC8-9B5C-EFF9E30F781F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A557C66-B831-4EC8-9B5C-EFF9E30F781F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A557C66-B831-4EC8-9B5C-EFF9E30F781F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A557C66-B831-4EC8-9B5C-EFF9E30F781F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9900CB10-EED8-44AD-8846-D0E16D1E1D63}
+	EndGlobalSection
+EndGlobal
