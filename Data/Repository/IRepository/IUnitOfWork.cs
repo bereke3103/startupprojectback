@@ -9,6 +9,8 @@ namespace DataAccess.Repository.IRepository
     public interface IUnitOfWork
     {
         IUserRepository User { get; }
+        IRegisterRepository Register { get; }
+        ILoginRepository Login { get; }
 
         Task SaveAsync();
     }

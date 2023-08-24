@@ -12,6 +12,7 @@ namespace DataAccess.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
         public DbSet<UserModel> Users { get; set; }
+        public DbSet<RegisterModel> Registers { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

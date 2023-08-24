@@ -17,7 +17,7 @@ namespace StrProject.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        [HttpGet]
+        [HttpGet("getusers")]
         public async Task<IActionResult> GetUsersAsync()
         {
             var result = await _unitOfWork.User.GetAll();
@@ -25,7 +25,8 @@ namespace StrProject.Controllers
             return Ok(result);
         }
 
-        [HttpPost]
+
+        [HttpPost("createuser")]
         public async Task<IActionResult> CreateUserAsync(UserCreateVM model)
         {
             UserModel newEntity = new UserModel()
@@ -42,8 +43,9 @@ namespace StrProject.Controllers
 
             return Ok(newEntity);
         }
+        
 
-        [HttpPut]
+        [HttpPut("updateuser")]
         public async Task<IActionResult> UpdateUserAsync(int id, UserUpdateVM model)
         {
             var foundUser = _unitOfWork.User.Get(u => u.Id == id);
@@ -65,7 +67,7 @@ namespace StrProject.Controllers
             }
         }
 
-        [HttpGet("getuserById")]
+        [HttpGet("getuserbyid")]
         public async Task<IActionResult> GetUserById(int id)
         {
             var user = _unitOfWork.User.Get(user => user.Id == id);
