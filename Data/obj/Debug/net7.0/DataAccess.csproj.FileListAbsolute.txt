@@ -49,3 +49,20 @@ C:\Users\User\Desktop\strproject\backstartproject\startupprojectback\Data\obj\De
 C:\Users\User\Desktop\strproject\backstartproject\startupprojectback\Data\obj\Debug\net7.0\DataAccess.pdb
 C:\Users\User\Desktop\strproject\backstartproject\startupprojectback\Data\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
 C:\Users\User\Desktop\strproject\backstartproject\startupprojectback\Data\obj\Debug\net7.0\ref\DataAccess.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\bin\Debug\net7.0\DataAccess.deps.json
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\bin\Debug\net7.0\DataAccess.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\bin\Debug\net7.0\Models.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\bin\Debug\net7.0\Models.pdb
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.csproj.CopyComplete
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\refint\DataAccess.dll
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.pdb
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
+C:\Users\berek\OneDrive\Рабочий стол\startupprojectfrontandback\startupprojectback\Data\obj\Debug\net7.0\ref\DataAccess.dll
