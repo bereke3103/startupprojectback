@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("AppDbConnection")));
-builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IResumeRepository, ResumeRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddCors(options =>
 {
@@ -25,8 +25,9 @@ builder.Services.AddCors(options =>
                       });
 
 });
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 var app = builder.Build();
-
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 app.UseCors(builder => builder
     .AllowAnyOrigin()
     .AllowAnyMethod()

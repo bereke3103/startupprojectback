@@ -1,6 +1,8 @@
-﻿using DataAccess.Repository.IRepository;
+﻿using DataAccess.Data;
+using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Models;
 using Models.ViewModel;
 using System.ComponentModel.DataAnnotations;
@@ -9,12 +11,14 @@ namespace StrProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class ResumeController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        public UserController(IUnitOfWork unitOfWork)
+        private readonly ApplicationDbContext _db;
+        public ResumeController(IUnitOfWork unitOfWork, ApplicationDbContext db)
         {
             _unitOfWork = unitOfWork;
+            _db = db;
         }
 
         [HttpGet("getusers")]
@@ -27,9 +31,9 @@ namespace StrProject.Controllers
 
 
         [HttpPost("createuser")]
-        public async Task<IActionResult> CreateUserAsync(UserCreateVM model)
+        public async Task<IActionResult> CreateUserAsync(ResumeCreateVM model)
         {
-            UserModel newEntity = new UserModel()
+            ResumeModel newEntity = new ResumeModel()
             {
                 Nickname = model.Nickname,
                 Firstname = model.Firstname,
@@ -46,7 +50,7 @@ namespace StrProject.Controllers
         
 
         [HttpPut("updateuser")]
-        public async Task<IActionResult> UpdateUserAsync(int id, UserUpdateVM model)
+        public async Task<IActionResult> UpdateUserAsync(int id, ResumeUpdateVM model)
         {
             var foundUser = _unitOfWork.User.Get(u => u.Id == id);
             if (foundUser == null)
@@ -79,6 +83,30 @@ namespace StrProject.Controllers
             {
                 return Ok(user);
             }
+        }
+
+        [HttpGet("getlistofwwnresumes")]
+        public async Task<IActionResult> GetListOfOwnResumes(int id)
+        {
+            var response = await _unitOfWork.User.GetResumeListByIdGet(id);
+            if (response == null)
+            {
+                throw new Exception("Произошла ошибка");
+            }
+
+            return Ok(response);
+
+        }
+
+        [HttpPost("createresumebyid")]
+        public async Task<IActionResult> CreateResumeById(ResumeCreateVM model)
+        {
+            var response = await _unitOfWork.User.CreateResumeById(model);
+            if (response == null)
+            {
+                throw new Exception("Произошла ошибка");
+            }
+            return Ok(response);
         }
     }
 }

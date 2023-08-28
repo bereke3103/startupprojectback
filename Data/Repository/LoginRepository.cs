@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository
 {
-    public class LoginRepository : Repository<RegisterModel>, ILoginRepository
+    public class LoginRepository : Repository<UserModel>, ILoginRepository
     {
         private readonly ApplicationDbContext _db;
         private readonly IConfiguration _configuration;
@@ -25,9 +25,9 @@ namespace DataAccess.Repository
             _configuration = configuration;
         }
 
-        public async Task<string> LoginAsync(RegisterVM model)
+        public async Task<TokenAndIdVM> LoginAsync(UserVM model)
         {
-            var foundUser = await _db.Registers.FirstOrDefaultAsync(u=> u.Login == model.Login);
+            var foundUser = await _db.Users.FirstOrDefaultAsync(u=> u.Login == model.Login);
             if (foundUser == null)
             {
                 throw new Exception("Неверный логин или пароль");
@@ -39,11 +39,16 @@ namespace DataAccess.Repository
             }
 
             var token = CreateToken(foundUser);
+            TokenAndIdVM tokenVM = new TokenAndIdVM()
+            {
+                Token = token,
+                Id = foundUser.Id
+            };
 
-            return token;
+            return tokenVM;
         }
 
-        private string CreateToken(RegisterModel foundUser)
+        private string CreateToken(UserModel foundUser)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:Key").Value!));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);

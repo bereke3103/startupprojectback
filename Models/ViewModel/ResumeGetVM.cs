@@ -7,17 +7,13 @@ using System.Threading.Tasks;
 
 namespace Models.ViewModel
 {
-    public class UserUpdateVM
+    public class ResumeGetVM
     {
-        [Required]
+        public int UserId { get; set; }
         public string Nickname { get; set; }
-        [Required]
         public string Firstname { get; set; }
-        [Required]
         public string Lastname { get; set; }
-        [Required]
         public string Workplace { get; set; }
-        [Required]
         public string Stack { get; set; }
     }
 }

@@ -12,14 +12,10 @@ namespace Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Nickname { get; set; }
+        public string Login { get; set; }
         [Required]
-        public string Firstname { get; set; }
-        [Required]
-        public string Lastname { get; set; }
-        [Required]
-        public string Workplace { get; set; }
-        [Required]
-        public string Stack { get; set; }
+        public string Password { get; set; }
+        public List<ResumeModel> Resumes { get; set; }
+        public List<CommentModel> Comments { get; set; }
     }
 }

@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository.IRepository
 {
-    public interface ILoginRepository : IRepository<RegisterModel>
+    public interface ILoginRepository : IRepository<UserModel>
     {
-        Task<string> LoginAsync(RegisterVM model);
+        Task<TokenAndIdVM> LoginAsync(UserVM model);
     }
 }

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repository
 {
-    public class RegisterRepository : Repository<RegisterModel>, IRegisterRepository
+    public class RegisterRepository : Repository<UserModel>, IRegisterRepository
     {
         private readonly ApplicationDbContext _db;
         public RegisterRepository(ApplicationDbContext db) : base(db) 
@@ -20,15 +20,15 @@ namespace DataAccess.Repository
         }
        
 
-        public async Task RegisterAsync(RegisterVM model)
+        public async Task RegisterAsync(UserVM model)
         {
-            var foundUser = await _db.Registers.FirstOrDefaultAsync(r => r.Login == model.Login);
+            var foundUser = await _db.Users.FirstOrDefaultAsync(r => r.Login == model.Login);
             if (foundUser != null)
             {
                 throw new Exception("Такой пользователь уже существует");
             }
 
-            RegisterModel registerModel = new RegisterModel()
+            UserModel registerModel = new UserModel()
             {
                 Login = model.Login,
                 Password = BCrypt.Net.BCrypt.HashPassword(model.Password),

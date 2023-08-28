@@ -16,7 +16,7 @@ namespace StrProject.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync(RegisterVM model)
+        public async Task<IActionResult> RegisterAsync(UserVM model)
         {
             await _unitOfWork.Register.RegisterAsync(model);
             return Ok("Вы успешно зарегистрировались");

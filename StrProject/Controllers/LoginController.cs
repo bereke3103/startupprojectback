@@ -16,13 +16,10 @@ namespace StrProject.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> LoginAsync(RegisterVM model)
+        public async Task<IActionResult> LoginAsync(UserVM model)
         {
             var token = await _unitOfWork.Login.LoginAsync(model);
-            if (string.IsNullOrEmpty(token))
-            {
-                return NotFound();
-            }
+ 
             return Ok(token);
         }
     }

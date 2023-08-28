@@ -12,19 +12,21 @@ namespace DataAccess.Repository
     public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _db;
-        private readonly IConfiguration _configuration;
-        public IUserRepository User { get; private set; }
+        public IResumeRepository User { get; private set; }
 
         public IRegisterRepository Register { get; private set; }
 
         public ILoginRepository Login { get; private set; }
 
+        public ICommentRepository Comment { get; private set; }
+
         public UnitOfWork(ApplicationDbContext db, IConfiguration configuration)
         {
             _db = db;
-            User = new UserRepository(_db);
+            User = new ResumeRepository(_db);
             Register = new RegisterRepository(_db);
             Login = new LoginRepository(_db, configuration);
+            Comment = new CommentRepository(_db);
         }
 
         public async Task SaveAsync()

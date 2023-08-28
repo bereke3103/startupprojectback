@@ -5,15 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models
+namespace Models.ViewModel
 {
-    public class RegisterModel
+    public class UserVM
     {
-        [Key]
-        public int Id { get; set; }
-        [Required]
         public string Login { get; set; }
-        [Required]
         public string Password { get; set; }
     }
 }

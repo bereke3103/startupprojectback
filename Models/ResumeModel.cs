@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models.ViewModel
+namespace Models
 {
-    public class UserCreateVM
+    public class ResumeModel
     {
+        [Key]
+        public int Id { get; set; }
         [Required]
         public string Nickname { get; set; }
         [Required]
@@ -19,6 +22,10 @@ namespace Models.ViewModel
         public string Workplace { get; set; }
         [Required]
         public string Stack { get; set; }
+
+        public int UserId { get; set; }
+        [ForeignKey("UserId ")]
+        public UserModel User { get; set; }
 
     }
 }

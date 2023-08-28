@@ -11,8 +11,9 @@ namespace DataAccess.Data
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        public DbSet<ResumeModel> Resumes { get; set; }
         public DbSet<UserModel> Users { get; set; }
-        public DbSet<RegisterModel> Registers { get; set; }
+        public DbSet<CommentModel> Comments { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
