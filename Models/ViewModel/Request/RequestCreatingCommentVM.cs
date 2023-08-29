@@ -8,6 +8,7 @@ namespace Models.ViewModel.Request
 {
     public class RequestCreatingCommentVM
     {
+        public int AuthorId { get; set; }
         public int UserId { get; set; }
         public int ResumeId { get; set; }
         public string Comment { get; set; }

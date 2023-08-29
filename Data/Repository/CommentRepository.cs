@@ -30,8 +30,10 @@ namespace DataAccess.Repository
 
             foreach (var comment in commentsFromBack)
             {
+                var author = await _db.Users.FirstOrDefaultAsync(u=>u.Id == comment.AuthroId);
                 comments.Add(new GetAllResumesByUserIdByCommentIdVM()
                 {
+                    Author = author.Login,
                     Id = comment.Id,
                     Comment = comment.Comment,
                     CreatedComment = comment.CreatedComment,
@@ -51,6 +53,7 @@ namespace DataAccess.Repository
 
             CommentModel comment = new CommentModel() 
             { 
+                AuthroId = model.AuthorId,
                 Comment = model.Comment,
                 UserId = model.UserId,
                 ResumeId = model.ResumeId,
@@ -59,8 +62,10 @@ namespace DataAccess.Repository
             await _db.Comments.AddAsync(comment);
             await _db.SaveChangesAsync();
 
+
             ResponseCreatingCommentVM returninModel = new ResponseCreatingCommentVM()
             {
+                Id = comment.Id,
                 Comment = model.Comment,
             };
 

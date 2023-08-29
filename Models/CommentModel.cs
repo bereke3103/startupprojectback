@@ -17,6 +17,7 @@ namespace Models
         [ForeignKey("UserId")]
         public UserModel User { get; set; }
         public int ResumeId { get; set; }
+        public int AuthroId { get; set; }
 
         [ForeignKey("ResumeId")]
         public ResumeModel Resume { get; set; }
