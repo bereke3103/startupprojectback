@@ -20,6 +20,8 @@ namespace DataAccess.Repository
 
         public ICommentRepository Comment { get; private set; }
 
+        public INewsRepository News { get; private set; }
+
         public UnitOfWork(ApplicationDbContext db, IConfiguration configuration)
         {
             _db = db;
@@ -27,6 +29,8 @@ namespace DataAccess.Repository
             Register = new RegisterRepository(_db);
             Login = new LoginRepository(_db, configuration);
             Comment = new CommentRepository(_db);
+            News = new NewsRepository(_db);
+       
         }
 
         public async Task SaveAsync()

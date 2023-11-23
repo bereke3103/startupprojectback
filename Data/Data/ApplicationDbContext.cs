@@ -14,6 +14,7 @@ namespace DataAccess.Data
         public DbSet<ResumeModel> Resumes { get; set; }
         public DbSet<UserModel> Users { get; set; }
         public DbSet<CommentModel> Comments { get; set; }
+        public DbSet<NewsModel> News { get; set; }
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

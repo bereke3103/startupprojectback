@@ -12,6 +12,7 @@ namespace DataAccess.Repository.IRepository
         IRegisterRepository Register { get; }
         ILoginRepository Login { get; }
         ICommentRepository Comment { get; }
+        INewsRepository News { get; }
 
         Task SaveAsync();
     }
